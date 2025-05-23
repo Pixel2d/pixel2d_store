@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Obrigado pela compra!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      padding: 80px;
+      background-color: #fdfbf7;
+      color: #2e8b57;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Obrigado pela sua compra! 🎉</h1>
+  <p>Você está sendo redirecionado para o download do seu produto...</p>
+
+  <script>
+    const links = {
+      "tulipas": "https://drive.google.com/drive/folder/ABC123TULIPAS",
+      "gato-pop": "https://drive.google.com/drive/folder/ABC456GATOPOP",
+      "motivacional": "https://drive.google.com/drive/folder/ABC789MOTIVACIONAL"
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const produto = params.get("produto");
+
+    if (produto && links[produto]) {
+      setTimeout(() => {
+        window.location.href = links[produto];
+      }, 3000);
+    } else {
+      document.body.innerHTML = "<h1>Ops! Produto não encontrado.</h1><p>Entre em contato com @lojapixel2d no Instagram para resolvermos isso rapidinho 💙</p>";
+    }
+  </script>
+</body>
+</html>

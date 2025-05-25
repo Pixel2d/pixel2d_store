@@ -2,46 +2,58 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Obrigado pela compra!</title>
+  <title>Obrigado pela sua compra!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 80px;
-      background-color: #fdfbf7;
-      color: #2e8b57;
     }
+
     h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      color: #00897b;
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 18px;
+      color: #555;
+      font-size: 1.2em;
+      margin: 10px 0 30px;
+    }
+
+    a.button {
+      background-color: #00897b;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #00695c;
+    }
+
+    .emoji {
+      font-size: 3em;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Obrigado pela sua compra! 🎉</h1>
-  <p>Você está sendo redirecionado para o download do seu produto...</p>
-
-  <script>
-    const links = {
-      "tulipas": "https://drive.google.com/drive/folder/ABC123TULIPAS",
-      "gato-pop": "https://drive.google.com/drive/folder/ABC456GATOPOP",
-      "motivacional": "https://drive.google.com/drive/folder/ABC789MOTIVACIONAL"
-    };
-
-    const params = new URLSearchParams(window.location.search);
-    const produto = params.get("produto");
-
-    if (produto && links[produto]) {
-      setTimeout(() => {
-        window.location.href = links[produto];
-      }, 3000);
-    } else {
-      document.body.innerHTML = "<h1>Ops! Produto não encontrado.</h1><p>Entre em contato com @lojapixel2d no Instagram para resolvermos isso rapidinho 💙</p>";
-    }
-  </script>
+  <div class="emoji">🎉</div>
+  <h1>Obrigado pela sua compra!</h1>
+  <p>Seu pedido foi confirmado e em breve você receberá tudo por e-mail.</p>
+  <a class="button" href="index.html">Voltar para a loja</a>
 </body>
 </html>

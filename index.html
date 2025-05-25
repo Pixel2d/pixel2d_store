@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Loja Pixel 2D</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel 2D</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfc;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #e1f5f2;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      color: #247a6b;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      color: #666;
+    }
+
+    .colecoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 1rem;
+      transition: box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: #247a6b;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #e1f5f2;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bem-vindo à Loja Pixel 2D</h1>
-  <p>Esta é a página inicial.</p>
-  <a href="obrigado.html">Ir para página de agradecimento</a>
+  <header>
+    <h1>PIXEL 2D</h1>
+    <p>Arte digital para decorar, inspirar e organizar seu dia a dia</p>
+  </header>
+
+  <section class="colecoes">
+    <div class="card">
+      <h2>🌸 Frases Motivacionais</h2>
+      <a href="frases.html">Ver coleção</a>
+    </div>
+    <div class="card">
+      <h2>🐱 Pop Cats</h2>
+      <a href="popcats.html">Ver coleção</a>
+    </div>
+    <div class="card">
+      <h2>🎨 Tulipas Monocromáticas</h2>
+      <a href="tulipas.html">Ver coleção</a>
+    </div>
+    <div class="card">
+      <h2>📺 Doramas</h2>
+      <a href="doramas.html">Ver coleção</a>
+    </div>
+    <div class="card">
+      <h2>💻 Frases para TI</h2>
+      <a href="frases-ti.html">Ver coleção</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Pixel 2D — Criado com ❤ usando GitHub Pages. <br />
+    <a href="https://instagram.com/pixel2d_store" target="_blank">@pixel2d_store</a>
+  </footer>
 </body>
 </html>

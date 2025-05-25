@@ -2,108 +2,92 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loja Pixel 2D</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel 2D - Arte Digital</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfdfc;
-      color: #333;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('fundo.jpg'); /* Substitua por nome do arquivo correto */
+      background-size: cover;
+      background-position: center;
       text-align: center;
+      color: #014D40;
     }
 
-    header {
-      background-color: #e1f5f2;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    .logo {
+      width: 180px;
+      margin-top: 60px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-      color: #247a6b;
+      font-size: 2em;
+      margin-top: 20px;
+      color: #014D40;
     }
 
     p {
-      margin-top: 0.5rem;
-      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      color: #2F6650;
     }
 
-    .colecoes {
+    .button-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      max-width: 300px;
+      margin: auto;
     }
 
-    .card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      width: 250px;
-      padding: 1rem;
-      transition: box-shadow 0.3s;
-    }
-
-    .card:hover {
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .card h2 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
+    a.button {
       text-decoration: none;
-      color: #247a6b;
+      background-color: #047857;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
       font-weight: bold;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #065F46;
     }
 
     footer {
-      background-color: #e1f5f2;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #065F46;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>LOJA PIXEL 2D</h1>
-    <p>Arte digital para decorar, inspirar e organizar seu dia a dia</p>
-  </header>
+  <img src="logo.png" alt="Pixel 2D Logo" class="logo" />
+  <h1>Bem-vindo(a) à Pixel 2D</h1>
+  <p>Arte digital para decorar e inspirar 💚</p>
 
-  <section class="colecoes">
-    <div class="card">
-      <h2>🌸 Frases Motivacionais</h2>
-      <a href="frases.html">Ver coleção</a>
-    </div>
-    <div class="card">
-      <h2>🐱 Pop Cats</h2>
-      <a href="popcats.html">Ver coleção</a>
-    </div>
-    <div class="card">
-      <h2>🎨 Tulipas Monocromáticas</h2>
-      <a href="tulipas.html">Ver coleção</a>
-    </div>
-    <div class="card">
-      <h2>📺 Doramas</h2>
-      <a href="doramas.html">Ver coleção</a>
-    </div>
-    <div class="card">
-      <h2>💻 Frases para TI</h2>
-      <a href="frases-ti.html">Ver coleção</a>
-    </div>
-  </section>
+  <div class="button-container">
+    <a href="frases.html" class="button">Frases Motivacionais</a>
+    <a href="pets.html" class="button">Pets</a>
+    <a href="dorameiras.html" class="button">Dorameiras</a>
+    <a href="arte.html" class="button">Arte Minimalista</a>
+    <a href="natureza.html" class="button">Natureza</a>
+  </div>
 
   <footer>
-    © 2025 Loja Pixel 2D — Criado com ❤ usando GitHub Pages. <br />
-    <a href="https://instagram.com/pixel2d_store" target="_blank">@pixel2d_store</a>
+    <p>Siga no Instagram: <a href="https://instagram.com/pixel2d_store" target="_blank">@pixel2d_store</a></p>
   </footer>
 </body>
 </html>

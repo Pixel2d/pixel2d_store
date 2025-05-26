@@ -1,93 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Pixel 2D</title>
+  <title>Pixel 2D</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('fundo.jpg') no-repeat center center fixed;
+      background-image: url('fundo.jpg');
       background-size: cover;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.8);
-    }
-    header img {
-      max-width: 200px;
-    }
-    .categorias {
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
-      gap: 20px;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
-    .categoria {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      min-width: 200px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    .categoria a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    footer {
-      background: #f3f3f3;
-      padding: 20px;
+
+    .container {
       text-align: center;
-      position: relative;
+      padding: 40px 20px 80px;
+    }
+
+    .logo {
+      max-width: 160px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #1b3b2c;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      color: #2f4f4f;
+      margin: 8px 0 30px;
+      font-size: 16px;
+    }
+
+    .button {
+      display: block;
+      width: 220px;
+      margin: 10px auto;
+      padding: 12px;
+      background-color: #146c5c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0f5649;
+    }
+
+    .footer {
+      position: fixed;
       bottom: 0;
+      left: 0;
       width: 100%;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 12px 0;
     }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 10px;
+
+    .footer a {
+      margin: 0 10px;
+      text-decoration: none;
     }
-    .social-icons a {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-    }
-    .social-icons img {
-      width: 100%;
-      height: auto;
+
+    .footer img {
+      height: 24px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Loja Pixel 2D">
-  </header>
+  <div class="container">
+    <img src="logo.png" alt="Logo Pixel 2D" class="logo">
+    <h1>Bem-vindo(a) à Pixel 2D</h1>
+    <p>Arte digital para decorar e inspirar 💚</p>
 
-  <section class="categorias">
-    <div class="categoria"><a href="frases.html">Frases Motivacionais</a></div>
-    <div class="categoria"><a href="pets.html">Pets</a></div>
-    <div class="categoria"><a href="dorameiras.html">Dorameiras</a></div>
-    <div class="categoria"><a href="minimalista.html">Arte Minimalista</a></div>
-    <div class="categoria"><a href="natureza.html">Natureza</a></div>
-  </section>
+    <a href="#" class="button">Frases Motivacionais</a>
+    <a href="#" class="button">Pets</a>
+    <a href="#" class="button">Dorameiras</a>
+    <a href="#" class="button">Arte Minimalista</a>
+    <a href="#" class="button">Natureza</a>
+  </div>
 
-  <footer>
-    <div>Siga a Loja Pixel 2D:</div>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/pixel2d_store" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/pixel2dstore" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-      </a>
-    </div>
-  </footer>
+  <div class="footer">
+    <a href="https://www.instagram.com/pixel2d_store" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/pixel2dstore" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+    </a>
+  </div>
 </body>
 </html>
